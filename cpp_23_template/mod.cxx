@@ -8,4 +8,4 @@ void func()
 {
     std::print("hello NEWPROJNAME\n");
 }
-} // namespace bar
+} // namespace mod
