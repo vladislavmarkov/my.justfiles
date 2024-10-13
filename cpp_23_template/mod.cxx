@@ -6,6 +6,6 @@ export namespace mod
 {
 void func()
 {
-    std::print("hello NEWPROJNAME\n");
+    std::println("hello NEWPROJNAME");
 }
 } // namespace mod
