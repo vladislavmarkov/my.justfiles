@@ -1,4 +1,4 @@
 alias cmk='reset && cmake -B build -S .'
-alias cmk23='reset && cmake -G Ninja -B build -S . -DCMAKE_CXX_COMPILER=clang++-18 -DCMAKE_CXX_FLAGS=-stdlib=libc++ -Wno-dev'
+alias cmk23='reset && cmake -G Ninja -B build -S . -DCMAKE_CXX_COMPILER=clang++-19 -DCMAKE_CXX_FLAGS=-stdlib=libc++ -Wno-dev'
 alias b='cmake --build build -j'
 alias cxx='just --working-directory . --justfile $HOME/.just/cpp.justfile'
