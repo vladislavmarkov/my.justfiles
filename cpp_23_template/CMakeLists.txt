@@ -22,9 +22,9 @@ if (NOT CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_VERSION
     message(FATAL_ERROR "Only clang (v18.1.3+) supports C++23 modules")
 endif ()
 
-add_executable(NEWPROJNAME NEWPROJNAME.cpp)
+add_executable(NEWPROJNAME src/NEWPROJNAME.cpp)
 
-target_sources(NEWPROJNAME PRIVATE FILE_SET CXX_MODULES FILES mod.cxx)
+target_sources(NEWPROJNAME PRIVATE FILE_SET CXX_MODULES FILES src/mod.cxx)
 
 target_compile_options(NEWPROJNAME PRIVATE -Wall -Wextra -Werror -Wpedantic)
 

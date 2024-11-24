@@ -39,7 +39,7 @@ new NAME STANDARD:
             cp -r {{ justfile_dir() }}/$template_dir/. {{ invocation_dir() }}/
             find {{ invocation_dir() }} -type f -exec sed -i 's/NEWPROJNAME/{{ NAME }}/g' {} +
             find {{ invocation_dir() }} -type f -exec sed -i 's/NEWPROJCPPSTD/{{ STANDARD }}/g' {} +
-            mv NEWPROJNAME.cpp {{ NAME }}.cpp
+            mv src/NEWPROJNAME.cpp src/{{ NAME }}.cpp
 
             # create repo with initial commit
             if [ ! -d ".git" ]

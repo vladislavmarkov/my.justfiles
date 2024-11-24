@@ -7,6 +7,6 @@ project(
     VERSION 0.0.1
     LANGUAGES CXX)
 
-add_executable(NEWPROJNAME NEWPROJNAME.cpp)
+add_executable(NEWPROJNAME src/NEWPROJNAME.cpp)
 
 target_compile_options(NEWPROJNAME PRIVATE -Wall -Wextra -Werror -Wpedantic)
