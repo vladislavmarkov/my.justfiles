@@ -1,2 +1,2 @@
 CompileFlags:
-  Add: [-std=c++NEWPROJCPPSTD]
+  Add: [-std=c++NEWPROJCPPSTD,-ferror-limit=0]
